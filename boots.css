@@ -8,6 +8,7 @@
 .content {
   width: calc(100% - 17rem);
   margin-left: 17rem;
+  z-index: 10;
 }
 body {
   background: linear-gradient(
@@ -30,8 +31,15 @@ body {
   --x: 100%;
   transition-duration: 1s;
 }
-.flex{
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.dropdown,
+.dropdown-menu,
+.dropdown-item,
+.dropdown-toggle {
+  z-index: 100;
 }
